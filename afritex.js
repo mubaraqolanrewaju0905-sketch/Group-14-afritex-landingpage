@@ -1,3 +1,5 @@
+ `document.getElementById()`         
+  `.style`                 
 // ─── NAVBAR SCROLL SHRINK ───
 // Shrinks the navbar padding when user scrolls past 60px
 const navbar = document.getElementById('navbar');
