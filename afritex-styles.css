@@ -18,7 +18,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: var(--off-white);
+  background: var(--warm);
   color: var(--ink);
   overflow-x: hidden;
 }
@@ -279,7 +279,7 @@ nav.scrolled { padding: .85rem 3.5rem; }
 .step-desc { font-size: .9rem; color: var(--mid); line-height: 1.65; }
 
 /* ─── FEATURES ─── */
-.features { background: var(--forest); color: var(--cream); padding: 6rem 3.5rem; }
+.features { background: brown var(--forest); color: var(--gold); padding: 6rem 3.5rem; }
 .feat-header {
   display: flex; justify-content: space-between;
   align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 1.5rem;
@@ -306,7 +306,7 @@ nav.scrolled { padding: .85rem 3.5rem; }
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem; font-weight: 700; color: var(--cream); margin-bottom: .65rem;
 }
-.feat-desc { font-size: .875rem; color: rgba(245,237,224,.6); line-height: 1.65; }
+.feat-desc { font-size: .875rem; color: rgba(29, 18, 1, 0.6); line-height: 1.65; }
 
 /* ─── DESIGNER SHOWCASE ─── */
 .showcase { padding: 6rem 3.5rem; }

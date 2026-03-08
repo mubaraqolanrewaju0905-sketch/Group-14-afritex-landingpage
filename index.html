@@ -6,7 +6,6 @@
   <title>AFRITEX — African Fashion Marketplace</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="afritex-styles.css"/>
-  link <script>src="afritex.js"></script>`
 </head>
 <body>
 
@@ -17,13 +16,13 @@
     <a href="#features">Features</a>
     <a href="#designers">Designers</a>
     <a href="#about">About</a>
-    <button class="btn-outline" style="width:70px">Log In</button>
-    <button class="btn-primary" style="width:70px">Join Free</button>
+    <button class="btn-outline" style="width:200px">Log In</button>
+    <button class="btn-primary" style="width:200px">Sign Up for free</button>
   </div>
 
   <!-- NAV -->
   <nav id="navbar">
-    <a class="nav-logo" href="#" style="font-size: 2.2rem; font-weight: 700; color: #050705;">AFRI<span>TEX</span></a>
+    <a class="nav-logo" href="#">AFRI<span>TEX</span></a>
     <ul class="nav-links">
       <li><a href="#how">How It Works</a></li>
       <li><a href="#features">Features</a></li>
@@ -32,7 +31,7 @@
     </ul>
     <div class="nav-cta">
       <button class="btn-outline">Log In</button>
-      <button class="btn-primary">Join Free</button>
+      <button class="btn-primary">Sign Up for free</button>
     </div>
     <div class="hamburger" onclick="openMobileMenu()">
       <span></span><span></span><span></span>
@@ -283,7 +282,7 @@
         <div class="test-avatar">👤</div>
         <div>
           <div class="test-name">Sikirat Aderogba</div>
-          <div class="test-role">Lead Product Manager · AFRITEX · TechCrush Group 14 C5 Capstone 2025</div>
+          <div class="test-role">Lead Product Manager · AFRITEX · TechCrush Capstone 2025</div>
         </div>
       </div>
     </div>
@@ -349,6 +348,54 @@
     </div>
   </footer>
 
-  <script src="afritex-script.js"></script>
+  <script>
+    // ─── NAVBAR SCROLL ───
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ─── MOBILE MENU ───
+    function openMobileMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+    document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', closeMobileMenu));
+
+    // ─── SCROLL REVEAL ───
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ─── COUNTER ANIMATION ───
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.target;
+        let current = 0;
+        const step = target / 60;
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = Math.floor(current);
+          if (current >= target) clearInterval(timer);
+        }, 22);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+
+    // ─── SMOOTH HOVER ON CARDS ───
+    document.querySelectorAll('.feat-card, .designer-card, .how-step').forEach(card => {
+      card.addEventListener('mouseenter', () => { card.style.transition = 'all .25s ease'; });
+    });
+  </script>
+  <script src="afritex.js"></script>
 </body>
 </html>
