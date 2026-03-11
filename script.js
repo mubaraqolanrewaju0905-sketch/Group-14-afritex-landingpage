@@ -1,4 +1,4 @@
-console.log('afritex.js loaded');
+console.log('script.js loaded');
 
 function toggleMobileNav() {
       document.getElementById('mobileNav').classList.toggle('open');
