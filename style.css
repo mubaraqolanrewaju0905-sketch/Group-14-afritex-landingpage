@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 :root {
   --gold:        #E8A020;
   --gold-dark:   #C88010;
@@ -1314,5 +1312,4 @@ tr:hover {
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 0.2s;
->>>>>>> edfda03a7baebace2526bab6519ed399223843b1
 }
