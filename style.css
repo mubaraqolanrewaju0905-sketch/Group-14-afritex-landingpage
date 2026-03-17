@@ -421,7 +421,6 @@ button { cursor: pointer; font-family: var(--font-ui); border: none; outline: no
   gap: 20px;
   padding: 40px 0;
   padding-left: 40px;
-
 }
 .feature-banner-inner {
   max-width: 1200px;
@@ -523,7 +522,7 @@ flex-direction: column;
   font-size: 1.4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
 
   .feature-banner-inner {
     grid-template-columns: 1fr 1fr;
@@ -783,7 +782,11 @@ footer { background: var(--dark-footer); padding: 3.5rem 2rem 1.75rem; }
 }
 .footer-bottom-text { font-size: .71rem; color: rgba(255,255,255,.22); }
 .footer-bottom-movement { font-family: var(--font-ui); font-size: .75rem; color: var(--gold); font-weight: 600; }
-
+.footer-bottom img {
+  width: 32px; height: 32px;
+  background: #060606; 
+  background-image: #060606;
+}
 /* ═══════════════════════════════════════════
    RESPONSIVE — TABLET  max-width: 1024px
 ═══════════════════════════════════════════ */
