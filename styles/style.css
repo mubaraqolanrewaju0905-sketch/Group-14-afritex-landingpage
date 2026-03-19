@@ -406,6 +406,7 @@ button { cursor: pointer; font-family: var(--font-ui); border: none; outline: no
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: .75rem;
+    width: 100%;
   }
 }
 
@@ -651,7 +652,10 @@ flex-direction: column;
 @media (max-width: 1024px) {
   .style-grid { grid-template-columns: repeat(2, 1fr); }
 } 
-
+@media screen and (max-width: 768px) {
+  .style-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  
+}
 
 
 /* ─────────────────────────────────────
