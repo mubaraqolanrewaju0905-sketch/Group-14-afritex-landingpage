@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- PRODUCTS (persisted in localStorage) ---
     let products = [
-        { name: "Ankara Bracelet", price: "$32", stock: "12 units", status: "Active", image: "images/ankara-bracelet.jpg" },
-        { name: "Cowrie Necklace", price: "$12", stock: "12 units", status: "Active", image: "images/cowrie-necklace.jpg" },
-        { name: "Beaded Earrings", price: "$11", stock: "12 units", status: "Active", image: "images/beaded-earrings.jpg" },
+        { name: "Ankara Bracelet", price: "$32", stock: "12 units", status: "Active", image: "../images/ankara-bracelet.jpg" },
+        { name: "Cowrie Necklace", price: "$12", stock: "12 units", status: "Active", image: "../images/cowrie-necklace.jpg" },
+        { name: "Beaded Earrings", price: "$11", stock: "12 units", status: "Active", image: "../images/beaded-earrings.jpg" },
         { name: "Ankara Sandals", price: "$24", stock: "12 units", status: "Active", image: "" }
     ];
 
