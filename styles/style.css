@@ -157,7 +157,19 @@ button { cursor: pointer; font-family: var(--font-ui); border: none; outline: no
   flex-shrink: 0;
 }
 
-.btn-login,
+.btn-login {
+  font-family: var(--font-ui);
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--text-body);
+  padding: .38rem .9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  transition: border-color .2s, color .2s;
+  cursor: pointer;
+}
+.btn-login:hover { border-color: var(--gold); color: var(--gold); }
 .btn-SignUp {
   font-family: var(--font-ui);
   font-size: .78rem;
@@ -170,7 +182,50 @@ button { cursor: pointer; font-family: var(--font-ui); border: none; outline: no
   transition: border-color .2s, color .2s;
   cursor: pointer;
 }
-.btn-login:hover, .btn-SignUp:hover { border-color: var(--gold); color: var(--gold); }
+ .btn-SignUp:hover { border-color: var(--gold); color: var(--gold); }
+ 
+ /* ── MOBILE — show login & signup as full buttons ── */
+@media (max-width: 768px) {
+
+  /* Hide them in the topbar on mobile */
+  .btn-login,
+  .btn-SignUp {
+    display: none;
+  }
+
+  /* ── Show them inside the mobile nav instead ── */
+  .mobile-nav .mobile-auth {
+    display: flex;
+    gap: .75rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E5E5E5;
+  }
+
+  .mobile-nav .btn-login-mobile,
+  .mobile-nav .btn-signup-mobile {
+    flex: 1;
+    text-align: center;
+    padding: .65rem;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .82rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+
+  .mobile-nav .btn-login-mobile {
+    background: #fff;
+    color: #111;
+    border: 1.5px solid #E5E5E5;
+  }
+
+  .mobile-nav .btn-signup-mobile {
+    background: #E8A020;
+    color: #fff;
+  }
+}
 
 /* Cart */
 .topbar-cart {
