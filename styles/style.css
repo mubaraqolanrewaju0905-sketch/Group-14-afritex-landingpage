@@ -821,6 +821,20 @@ footer { background: var(--dark-footer); padding: 3.5rem 2rem 1.75rem; }
   .btn-sell     { display: none; }
   .hamburger-btn { display: flex; }
   .mobile-nav   { top: 56px; }
+  
+  .hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+}
 
   /* Hero */
   .hero         { padding: 2rem 1rem; }
