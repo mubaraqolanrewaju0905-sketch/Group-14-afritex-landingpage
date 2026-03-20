@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Ankara Bracelet", price: "$32", stock: "12 units", status: "Active", image: "../images/ankara-bracelet.jpg" },
         { name: "Cowrie Necklace", price: "$12", stock: "12 units", status: "Active", image: "../images/cowrie-necklace.jpg" },
         { name: "Beaded Earrings", price: "$11", stock: "12 units", status: "Active", image: "../images/beaded-earrings.jpg" },
-        { name: "Ankara Sandals", price: "$24", stock: "12 units", status: "Active", image: "" }
+        { name: "Ankara Sandals", price: "$24", stock: "12 units", status: "Active", image: "../images/ankara-sandals.jpg" }
     ];
 
     function saveProducts() {
