@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afritex | Customer Signup</title>
+    <link rel="stylesheet" href="../styles/customersignup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <button class="back-arrow" onclick="history.back()">←</button>
+            <h2>Create a Customer Account</h2>
+            
+            <form id="customerForm">
+                <p class="section-label">Personal Details</p>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <br>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password" data-target="password">👁️</span>
+                </div>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <span class="toggle-password" data-target="confirmPassword">👁️</span>
+                </div>
+                
+                <div class="row">
+                    <select id="country" class="half-width" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="gh">Ghana</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="ke">Kenya</option>
+                    </select>
+                </div>
+
+                <div class="phone-input">
+                    <select id="countryCode">
+                        <option value="+233">+233</option>
+                        <option value="+234">+234</option>
+                        <option value="+254">+254</option>
+                    </select>
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                 
+                <input type="email" id="email" placeholder="Email" required>             
+                
+                <p class="join-text">I am an independent African<br>
+                <span>Join thousands of customers already shopping</span></p>
+                <br>
+                <button type="submit" class="signup-btn" id="submitBtn">Sign Up</button>
+            </form>
+
+            <div class="divider">
+                <hr> <span>Forget Password</span> <hr>
+            </div>
+
+            <div class="social-row">
+                <button type="button" class="social-btn" id="googleBtn">Continue with <img src="../images/google-icon.png" alt="G" width="15"></button>
+                <button type="button" class="social-btn" id="appleBtn">Continue with <img src="images/apple-icon.png" alt="A" width="15"></button>
+            </div>
+
+            <p class="signin-link">Already have an account? <a href="../pages/customersignin.html">Sign in</a></p>
+
+            <footer class="footer-text">
+                <strong>AFRITEX</strong> | African Designers X Global Customers
+            </footer>
+        </div>
+    </div>
+    <!-- load the customer signup logic -->
+    <script src="../scripts/customersignup.js"></script>
+</body>
+</html>

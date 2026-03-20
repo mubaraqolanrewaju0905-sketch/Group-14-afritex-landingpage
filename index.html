@@ -4,8 +4,107 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AFRITEX — Africa Woven Into Every Thread</title>
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles/style.css"/>
+=======
+  <link rel="stylesheet" href="styles/style.css"/>
+
+  <style>
+    /* ── CART FIX ── */
+    .topbar-cart {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; cursor: pointer;
+    }
+    .topbar-cart svg { width: 22px; height: 22px; }
+    .cart-badge {
+      position: absolute; top: 1px; right: 0px;
+      width: 15px; height: 15px;
+      background: #E8A020; color: #fff;
+      font-size: .58rem; font-weight: 700; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ── HERO IMAGE ── */
+    .hero-image {
+      width: 210px; height: 210px; border-radius: 50%;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .hero-img-wrap {
+      width: 100%; height: 100%;
+      background: radial-gradient(circle at 60% 35%, #fde8c0 0%, #f5a020 35%, #b86010 65%, #6a2800 100%);
+      display: flex; align-items: flex-end; justify-content: center; overflow: hidden;
+    }
+    .hero-img-wrap svg { width: 78%; height: 88%; }
+
+    /* ── DESIGNER PHOTO CARDS ── */
+    .designer-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; }
+    .d-photo {
+      width: 100%; height: 100%;
+      display: flex; align-items: flex-end; justify-content: center; overflow: hidden;
+    }
+    .d-photo svg { width: 70%; height: 88%; }
+    .dp1 { background: linear-gradient(170deg,#e0b090 0%,#a06040 45%,#5a2810 100%); }
+    .dp2 { background: linear-gradient(170deg,#c89870 0%,#886040 45%,#4a2810 100%); }
+    .dp3 { background: linear-gradient(170deg,#e8d0a0 0%,#c09860 45%,#785828 100%); }
+    .dp4 { background: linear-gradient(170deg,#b07850 0%,#784830 45%,#3a1808 100%); }
+    .dp5 { background: linear-gradient(170deg,#c08860 0%,#885040 45%,#502018 100%); }
+    .dp6 { background: linear-gradient(170deg,#d0a878 0%,#a07040 45%,#603018 100%); }
+    .dp7 { background: linear-gradient(170deg,#c08870 0%,#906050 45%,#502818 100%); }
+    .dp8 { background: linear-gradient(170deg,#b89070 0%,#906850 45%,#504030 100%); }
+
+    /* ── PRODUCT PHOTOS ── */
+    .product-card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; }
+    .p-photo {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .p-photo svg { width: 58%; height: 72%; filter: drop-shadow(0 6px 14px rgba(0,0,0,.28)); }
+    .pp1 { background: linear-gradient(145deg,#f5a030 0%,#c06010 50%,#7a3000 100%); }
+    .pp2 { background: linear-gradient(145deg,#2a5a20 0%,#183a10 55%,#0a1808 100%); }
+    .pp3 { background: linear-gradient(145deg,#4a1060 0%,#2a0838 55%,#180420 100%); }
+    .pp4 { background: linear-gradient(145deg,#c0a020 0%,#806800 55%,#403400 100%); }
+    .pp5 { background: linear-gradient(145deg,#183860 0%,#102040 55%,#081018 100%); }
+    .pp6 { background: linear-gradient(145deg,#8a1010 0%,#501010 55%,#280808 100%); }
+    .pp7 { background: linear-gradient(145deg,#285020 0%,#183810 55%,#0c2008 100%); }
+
+    /* ── STYLE CARDS ── */
+    .style-card { border-radius:8px; overflow:hidden; position:relative; aspect-ratio:3/4; cursor:pointer; }
+    .s-photo {
+      width:100%; height:100%;
+      display:flex; align-items:flex-end; justify-content:center;
+      overflow:hidden; transition: transform .35s ease;
+    }
+    .style-card:hover .s-photo { transform: scale(1.05); }
+    .s-photo svg { width:65%; height:82%; }
+    .sp1 { background: linear-gradient(165deg,#c8a060 10%,#7a4820 55%,#2a1008 100%); }
+    .sp2 { background: linear-gradient(165deg,#6080c0 10%,#304080 55%,#101840 100%); }
+    .sp3 { background: linear-gradient(165deg,#d4a870 10%,#8a5830 55%,#3a2010 100%); }
+    .sp4 { background: linear-gradient(165deg,#b088c0 10%,#6a3880 55%,#2a1040 100%); }
+
+    /* ── FEATURE BANNER IMG ── */
+    .feat-img-box {
+      width:100%; height:100%; min-height:340px;
+      background: linear-gradient(155deg,#1a0a00 0%,#6a2a08 35%,#d08018 65%,#f5b030 85%,#e8c860 100%);
+      display:flex; align-items:flex-end; justify-content:center; overflow:hidden;
+    }
+    .feat-img-box svg { width:52%; height:86%; }
+
+    /* ── TESTIMONIAL AVATARS ── */
+    .testimonial-avatar {
+      width:48px; height:48px; border-radius:50%;
+      overflow:hidden; flex-shrink:0;
+      display:flex; align-items:flex-end; justify-content:center;
+    }
+    .testimonial-avatar svg { width:80%; height:85%; }
+    .tav1 { background: linear-gradient(155deg,#d4906a,#8a4820); }
+    .tav2 { background: linear-gradient(155deg,#a07850,#503818); }
+    .tav3 { background: linear-gradient(155deg,#c8a878,#785838); }
+    .tav4 { background: linear-gradient(155deg,#b07858,#603828); }
+  </style>
+>>>>>>> origin/designer-pages
 </head>
 <body>
 
@@ -48,14 +147,30 @@
         <a href="#community">Community</a>
       </nav>
 
+<<<<<<< HEAD
       <!-- Search -->
       <div class="topbar-search">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2.5" stroke-linecap="round">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+=======
+    <div class="topbar-actions">
+      <button class="btn-login"> <a href="pages/customersignin.html">Login</a> </button>
+      <button class="btn-SignUp"> <a href="pages/customersignup.html">Sign Up</a></a> </button>
+    </div>
+
+      <!-- SHOPPING CART SVG -->
+      <div class="topbar-cart">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                stroke="#333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="21" r="1.5" fill="#333"/>
+          <circle cx="20" cy="21" r="1.5" fill="#333"/>
+>>>>>>> origin/designer-pages
         </svg>
         <input type="text" placeholder="Search designers, products..."/>
       </div>
 
+<<<<<<< HEAD
       <!-- Actions -->
       <div class="topbar-actions">
         <a href="pages/customersignin.html" class="btn-login">Login</a>
@@ -78,6 +193,9 @@
           <span></span><span></span><span></span>
         </button>
       </div>
+=======
+      <button class="btn-sell"> <a href="pages/designersignup.html">Sell on AFRITEX</a></button>
+>>>>>>> origin/designer-pages
 
     </div>
   </header>
@@ -95,8 +213,13 @@
       </p>
       <p class="hero-tagline">Support authentic African fashion across the continent.</p>
       <div class="hero-actions">
+<<<<<<< HEAD
         <a href="#designers" class="btn-explore">Explore Designers</a>
         <a href="index.html" class="btn-sell-designs">Sell Your Designs</a>
+=======
+        <button class="btn-explore">Explore Designers</button>
+        <button class="btn-sell-designs"> <a href="pages/designersignup.html">Sell Your Designs</a></button>
+>>>>>>> origin/designer-pages
       </div>
       <p class="hero-stats">Trusted by 2M+ African fashion lovers across the continent.</p>
     </div>
@@ -452,7 +575,11 @@
         <div class="cta-feature-item">Transparent Order Tracking<span>Customers track every order in real-time</span></div>
         <div class="cta-feature-item">Dedicated Support<span>Our team is here to help you grow</span></div>
       </div>
+<<<<<<< HEAD
       <a href="pages/designersignup.html" class="btn-cta-gold reveal">Start Free Today</a>
+=======
+      <button class="btn-cta-gold reveal"><a href="pages/designersignup.html">Start Free Today</a></button>
+>>>>>>> origin/designer-pages
       <p class="cta-tagline reveal">Lagos · Accra · Nairobi</p>
     </div>
   </section>
@@ -531,4 +658,8 @@
 
   <script src="scripts/script.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/designer-pages
